@@ -1,0 +1,2 @@
+values = input("Nhập các giá trị, cách nhau bằng khoảng trắng: ").split()
+print("Các giá trị bạn đã nhập là:", values)
