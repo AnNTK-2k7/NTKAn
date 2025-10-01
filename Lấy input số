@@ -1,0 +1,4 @@
+Num1=int(input("Nhập số hạng thứ nhất: "))
+Num2=int(input("Nhập số hạng thứ hai: "))
+total=Num1+Num2
+print("Tổng của hai số hạng trên là: ", total, sep=" ")
