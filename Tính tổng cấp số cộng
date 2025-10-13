@@ -1,0 +1,7 @@
+a = int(input("Nhập số hạng đầu: "))
+b = int(input("Nhập số hạng cuối: "))
+c = int(input("Nhập công sai: "))
+tong = 0
+for u in range(a, b+1, c):
+    tong += u
+print(tong)
