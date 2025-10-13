@@ -1,0 +1,12 @@
+a = input("Nhập tên của bạn: ")
+b = int(input("Nhập điểm của bạn: "))
+if b >= 90:
+    print("Bạn được điểm A")
+elif 80 <= b < 90:
+    print("Bạn được điểm B")
+elif 70<= b < 80:
+    print("Bạn được điểm C")
+elif 60<= b < 70:
+    print("Bạn được điểm D")
+elif b < 60:
+    print("Bạn chưa đủ điểm")
