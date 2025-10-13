@@ -4,4 +4,4 @@ c = int(input("Nhập công sai: "))
 tong = 0
 for u in range(a, b+1, c):
     tong += u
-print(tong)
+print("Tổng của cấp số cộng trên là: ",tong)
