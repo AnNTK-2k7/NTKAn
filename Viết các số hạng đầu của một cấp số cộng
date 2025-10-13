@@ -1,0 +1,6 @@
+a = int(input("Nhập số hạng đầu của cấp số cộng: "))
+b = int(input("Nhập công sai của cấp số cộng: "))
+c = int(input("Nhập giá trị mà số hạng cuối cùng phải nhỏ hơn: "))
+while a+b <= c:
+    a += b
+    print(a)
