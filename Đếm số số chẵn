@@ -1,0 +1,8 @@
+Num = int(input("Nhập số hạng cuối trong dãy: "))
+a=0
+for i in range(1, Num+1):
+    if i%2==0:
+        a+=1
+#Ý nghĩa của dòng 4 và 5 là: nếu biến i chia hết cho 2
+#Biến a cộng thêm 1 vào, có thể tận dụng điều này để đếm số số chẵn
+print(a)
