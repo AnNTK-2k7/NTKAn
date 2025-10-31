@@ -1,0 +1,47 @@
+Dict = {
+    "Hello":"Xin chào",
+    "Welcome":"Chào mừng"
+}
+while True:
+    print("1-Tra từ điển")
+    print("2-Thêm từ điển")
+    print("3-Xóa từ điển")
+    print("4-Thoát chương trình")
+    Type = int(input("Xin mời nhập số ứng với thao tác: "))
+    if Type == 1:
+        while True:
+            Word = input("Xin mời nhập từ cần tra: ")
+            Result = Dict.get(Word)
+            while Result is None:
+                Word = input("Từ này không có trong từ điển, vui lòng nhập lại: ")
+                Result = Dict.get(Word)
+            else:
+                print("Từ này có nghĩa là ", Result)
+            Question = int(input("Bạn có muốn tra tiếp không? Bấm 1 nếu có, 0 nếu không: "))
+            if Question == 0:
+                break
+    elif Type == 2:
+        while True:
+            New_word = input("Xin mời bạn nhập từ mới: ")
+            New_mean = input("Xin mời nhập nghĩa của từ trên: ")
+            Dict[New_word] = New_mean
+            Question = int(input("Bạn có muốn nhập tiếp không? Bấm 1 nếu có, 0 nếu không: "))
+            if Question == 0:
+                break
+    elif Type == 3:
+        while True:
+            Delete_Word = input("Xin mời nhập từ bạn muốn xóa: ")
+            Result = Dict.get(Delete_Word)
+            while Result is None:
+                print("Không tìm thấy từ cần xóa")
+                Delete_Word = input("Xin mời nhập từ bạn muốn xóa: ")
+                Result = Dict.get(Delete_Word)
+            else:
+                del Dict[Delete_Word]
+                print("Đã xóa thành công")
+            Question = int(input("Bạn có muốn xóa tiếp không? Bấm 1 nếu có, 0 nếu không: "))
+            if Question == 0:
+                break
+    elif Type == 4:
+        print("Cảm ơn bạn đã dùng từ điển Ảnh Việt, hẹn gặp lại")
+        break
