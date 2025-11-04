@@ -1,0 +1,11 @@
+Text = input("Nhập một chuỗi bất kỳ: ")
+Ng_Am = "aeiouAEIOU"
+Count = 0
+for i in Text:
+    if i in Ng_Am:
+        Count += 1
+Replaced = Text.replace(" ", "")
+Word = len(Replaced)
+Phu_Am = Word - Count
+print("Số nguyên âm trong chuỗi là: ", Count, "Số phụ âm trong chuỗi là: ", Phu_Am)
+print(Replaced)
