@@ -1,0 +1,5 @@
+Text = str(input("Nhập và một chuỗi bạn muốn: "))
+List = Text.split()
+print(List)
+Join = "-".join(List)
+print(Join)

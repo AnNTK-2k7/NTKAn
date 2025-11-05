@@ -1,0 +1,10 @@
+Num = input("Nhập các số bạn muốn, ngăn cách bằng dấu phẩy (viết các số và dấu phẩy liền nhau): ")
+from functools import reduce
+List = list(map(int, Num.split(",")))
+print(List)
+Sum = reduce(lambda x, y: x + y, List)
+print(Sum)
+Aver = Sum/len(List)
+print(Aver)
+Max = reduce(lambda x, y: x if x > y else y, List)
+print(Max)
