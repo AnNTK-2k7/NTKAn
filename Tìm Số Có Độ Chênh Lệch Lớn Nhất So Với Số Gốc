@@ -1,0 +1,14 @@
+#Hàm permutations dùng để hoán vị số
+from itertools import permutations
+
+num = input("Nhập số có 4 chữ số: ")
+Num = int(num)
+List = []
+for p in permutations(num):
+    a = int("".join(p))    
+    List.append(a)
+Differnce = 0
+for i in List:
+    if Num - i > Differnce or i - Num > Differnce:
+        Differnce = i
+print("Số có độ chênh lệch nhất so với số gốc là: ", i)
